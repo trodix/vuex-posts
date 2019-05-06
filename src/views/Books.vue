@@ -1,25 +1,25 @@
 <template>
     <v-container>
         <v-layout>
-            <h1>Posts</h1>
+            <h1>Books</h1>
         </v-layout>
         <v-layout>
-            <PostAdd/>
+            <BookAdd/>
         </v-layout>
         <v-layout>
-            <PostList/>
+            <BookList/>
         </v-layout>
     </v-container>
 </template>
 
 <script>
-import PostAdd from '@/components/posts/PostAdd.vue';
-import PostList from '@/components/posts/PostList.vue';
+import BookAdd from '@/components/books/BookAdd.vue';
+import BookList from '@/components/books/BookList.vue';
 
 export default {
     components: {
-        PostAdd,
-        PostList
+        BookAdd,
+        BookList
     },
     data() {
         return {

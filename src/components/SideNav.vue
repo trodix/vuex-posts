@@ -64,7 +64,8 @@ export default {
       toolbarTitle: "",
       links: [
         { title: 'Dashboard', icon: 'dashboard', route: '/' },
-        { title: 'Posts', icon: 'dashboard', route: '/posts' }
+        { title: 'Posts', icon: 'dashboard', route: '/posts' },
+        { title: 'Books', icon: 'dashboard', route: '/books' },
       ]
     }
   }
