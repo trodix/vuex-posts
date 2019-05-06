@@ -1,6 +1,5 @@
 <template>
     <div class="post-list">
-        <PostAdd/>
         <h1>List of Posts</h1>
         <v-card v-for="post in posts" :key="post.id">
           <v-card-title class="headline">{{ post.title }}</v-card-title>
@@ -21,10 +20,8 @@
 
 <script>
 import { mapState, mapActions, mapMutations} from "vuex";
-import PostAdd from './PostAdd'
 
 export default {
-  components: { PostAdd },
   name: "PostList",
   methods: {
     ...mapActions('posts', ["fetchPosts", "removePost"]),

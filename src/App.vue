@@ -1,29 +1,19 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vue</span>
-        <span class="font-weight-light">Vuex Posts</span>
-      </v-toolbar-title>
-    </v-toolbar>
-    <v-content>
-      <PostList/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <v-app>
+      <SideNav sidenavTitle="MaterialBook App" toolbarTitle="MaterialBook App" />
+    </v-app>
+  </div>
 </template>
-
 <script>
-import PostList from './components/PostList.vue'
+import SideNav from '@/components/SideNav.vue'; // @ is an alias to /src
 
 export default {
-  name: 'App',
   components: {
-    PostList
-  },
-  data () {
-    return {
-      //
-    }
+    SideNav
   }
 }
 </script>
+<style>
+  
+</style>
